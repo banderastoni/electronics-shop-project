@@ -19,7 +19,6 @@ class Item:
         self.__name = name
         self.price = price
         self.quantity = quantity
-        # Item.all.append(self)
 
     @property
     def name(self):
@@ -44,6 +43,7 @@ class Item:
         Класс-метод, инициализирующий экземпляры класса Item данными
         из файла src/items.csv
         """
+        cls.all = []
         with open('../src/items.csv', encoding='windows-1251') as csvfile:
             reader = csv.DictReader(csvfile, delimiter=',')
             for row in reader:
