@@ -40,3 +40,14 @@ def test_name_setter(test_by_fixture):
     assert test_by_fixture.name == 'Сеттер'
     test_by_fixture.name = 'Длинный Сеттер'
     assert test_by_fixture.name == 'Длинный Се'
+
+
+item4 = Item("Мобила", 100000, 300)
+
+
+def test_repr():
+    assert repr(item4) == "Item('Мобила', 100000, 300)"
+
+
+def test_str():
+    assert str(item4) == 'Мобила'
