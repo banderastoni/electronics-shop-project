@@ -51,3 +51,8 @@ def test_repr():
 
 def test_str():
     assert str(item4) == 'Мобила'
+
+
+def test_item_add():
+    assert item4 + item3 == 303
+
