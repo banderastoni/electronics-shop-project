@@ -4,13 +4,8 @@ from src.item import Item
 class MixinLang:
     """Класс миксин, для добавления атрибута language и метода change_lang"""
 
-    # def __init__(self, language):
-
-    #def __init__(self, name, price, quantity, __language):
     def __init__(self):
-        # super().__init__()
         self.__language = 'EN'
-        # super().__init__(self, name, price, quantity, __language)
 
     @property
     def language(self):
@@ -22,11 +17,16 @@ class MixinLang:
             return self
         else:
             self.__language = 'EN'
-            return self
+        return self
+
+    # @language.setter
+    # def language(self, language):
+    #     return language
 
 
 class Keyboard(Item, MixinLang):
-
-    # def __init__(self, name, price, quantity):
-    #     super().__init__(name, price, quantity)
     pass
+
+    # def __init__(self, name: str, price: float, quantity: int, language):
+    #     super().__init__(name, price, quantity)
+    #     self.language = language
