@@ -19,14 +19,6 @@ class MixinLang:
             self.__language = 'EN'
         return self
 
-    # @language.setter
-    # def language(self, language):
-    #     return language
-
 
 class Keyboard(Item, MixinLang):
     pass
-
-    # def __init__(self, name: str, price: float, quantity: int, language):
-    #     super().__init__(name, price, quantity)
-    #     self.language = language

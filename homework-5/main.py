@@ -3,7 +3,7 @@ from src.keyboard import Keyboard
 if __name__ == '__main__':
     kb = Keyboard('Dark Project KD87A', 12490, 3)
     assert str(kb) == "Dark Project KD87A"
-    # assert str(kb.language) == "EN"
+    assert str(kb.language) == "EN"
 
     kb.change_lang()
     assert str(kb.language) == "RU"
